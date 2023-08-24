@@ -1,4 +1,9 @@
-output "hello_world" {
-  description = "Hello World"
-  value       = module.MOD_SHORTNAME.hello_world
+output "id" {
+  description = "The name of the application insights application."
+  value       = module.application_insights.id
+}
+
+output "arn" {
+  description = "The ARN of the application insights application."
+  value       = module.application_insights.arn
 }

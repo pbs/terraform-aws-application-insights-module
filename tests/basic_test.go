@@ -5,5 +5,5 @@ import (
 )
 
 func TestBasicExample(t *testing.T) {
-	testTemplate(t, "basic")
+	testApplicationInsights(t, "basic")
 }

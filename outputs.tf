@@ -1,9 +1,9 @@
-output "hello_world" {
-  description = "Hello world output"
-  value       = "Hello, World!"
+output "id" {
+  description = "The name of the application insights application."
+  value       = aws_applicationinsights_application.app.id
 }
 
-output "tags" {
-  description = "The tags"
-  value       = local.tags
+output "arn" {
+  description = "The ARN of the application insights application."
+  value       = aws_applicationinsights_application.app.arn
 }
